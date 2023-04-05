@@ -1,7 +1,7 @@
 import Form_Proj from '../Projetos/Form_Proj'
 import styles from './Novo_Projeto.module.css'
 
-function Novo_Projeto() {
+function Novo_Projeto({btnText}) {
     return (
         <div className={styles.novoproj_container}>
              <h1>Criar projeto</h1>

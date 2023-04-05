@@ -12,12 +12,13 @@ footer {
     font-size: 1.3rem;
 }
 
-.social_list li {
+.social_list a {
     margin: 0 1rem;
+    color: #fdeded;
 }
 
-.social_list li:hover {
-    transition: 0.5s;
+.social_list a:hover {
+    transition: 0.3s;
     color: #FFBB33;
     cursor: pointer;
 }
