@@ -1,49 +1,126 @@
 {
   "projects": [
     {
+      "name": "Teste Desenvolvimento",
+      "budget": "1230",
       "category": {
-        "id": "6",
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Teste Design",
+      "budget": "3243",
+      "category": {
+        "id": "2",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Teste DevOps",
+      "budget": "3760",
+      "category": {
+        "id": "3",
+        "name": "DevOps"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "Teste Infraestrutura",
+      "budget": "9000",
+      "category": {
+        "id": "4",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Teste Marketing",
+      "budget": "100000",
+      "category": {
+        "id": "5",
         "name": "Marketing"
       },
       "cost": 0,
       "services": [],
-      "name": "nome",
-      "budget": "40000",
-      "id": 1
+      "id": 5
+    },
+    {
+      "name": "Teste Planejamento",
+      "budget": "720",
+      "category": {
+        "id": "6",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    },
+    {
+      "name": "Teste Treinamento",
+      "budget": "1500",
+      "category": {
+        "id": "7",
+        "name": "Treinamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "name": "Teste UX",
+      "budget": "7900",
+      "category": {
+        "id": "8",
+        "name": "UX"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 8
     }
   ],
   "categories": [
     {
       "id": 1,
-      "name": "Banco de dados"
-    },
-    {
-      "id": 2,
       "name": "Desenvolvimento"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Design"
     },
     {
+      "id": 3,
+      "name": "DevOps"
+    },
+    {
       "id": 4,
-      "name": "Experiência do Usuário"
+      "name": "Infraestrutura"
     },
     {
       "id": 5,
-      "name": "Infraestrutura e redes"
-    },
-    {
-      "id": 6,
       "name": "Marketing"
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "Planejamento"
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Treinamento"
+    },
+    {
+      "id": 8,
+      "name": "UX"
     }
   ]
 }
