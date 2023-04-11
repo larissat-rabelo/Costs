@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "category": {
+        "id": "6",
+        "name": "Marketing"
+      },
+      "cost": 0,
+      "services": [],
+      "name": "nome",
+      "budget": "40000",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Banco de dados"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Experiência do Usuário"
+    },
+    {
+      "id": 5,
+      "name": "Infraestrutura e redes"
+    },
+    {
+      "id": 6,
+      "name": "Marketing"
+    },
+    {
+      "id": 7,
+      "name": "Planejamento"
+    },
+    {
+      "id": 8,
+      "name": "Treinamento"
+    }
+  ]
+}
