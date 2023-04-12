@@ -5,11 +5,15 @@ import styles from './project.module.css'
 import Container from '../Layout/Container'
 import LinkButton from '../Layout/LinkButton'
 import Project_Card from '../Projetos/Project_Card'
+import Loading from '../Layout/Loading'
 
 function Projects() {
 
     const [projects, setProjects] = useState([])
+    const [removeLoading, setLoading] = useState(false)
+    const [projectMessage, setProjectMessage] = useState('')
     const location = useLocation()
+
     let message = ''
     if(location.state) {
         message = location.state.message
@@ -25,9 +29,24 @@ function Projects() {
           .then((data) => {
             console.log(data)
             setProjects(data)
+            setLoading(true)
           })
           .catch((err) => console.log(err))
     }, []);
+
+    function removeProject(id) {
+        fetch(`http://localhost:5000/projects/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then(resp => resp.json())
+        .then(data => {
+            setProjects(projects.filter((projeto) => projeto.id !== id))
+            setProjectMessage('Projeto removido com sucesso')
+        })
+        .catch(err => console.log(err))
+    }
 
     return (
        <div className={styles.project_container}>
@@ -36,6 +55,7 @@ function Projects() {
             <LinkButton to="/NovoProjeto" text="Criar projeto"/>
         </div>
         {message && <Message type ="sucess" msg={message}/>}
+        {projectMessage && <Message type="sucess" msg={projectMessage} />}
         <Container customClass="start">
             {projects.length > 0 && 
                 projects.map((projeto) => (
@@ -46,8 +66,13 @@ function Projects() {
                     budget={projeto.budget}
                     category={projeto.category.name}
                     key={projeto.id} 
+                    handleRemove={removeProject}
                     />
-                ))
+                ))}
+                {!removeLoading && <Loading />}
+                {removeLoading && projects.length === 0 && (
+                    <p>Não há projetos cadastrados</p>
+                )
             }
         </Container>
        </div>
