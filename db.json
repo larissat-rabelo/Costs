@@ -1,26 +1,92 @@
 {
   "projects": [
     {
-      "name": "nome",
-      "budget": "80000",
+      "name": "Contratação scrum master (Atualizado)",
+      "category": {
+        "id": "6",
+        "name": "Planejamento"
+      },
+      "budget": "7100",
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Contratação desenvolvedor(a) júnior",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "budget": "3000",
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Contratação UX designer",
+      "category": {
+        "id": "2",
+        "name": "Design"
+      },
+      "budget": "2750",
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "Ampliação de servidores",
+      "budget": "100000",
+      "category": {
+        "id": "4",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Campanha de marketing",
+      "budget": "35000",
+      "category": {
+        "id": "5",
+        "name": "Marketing"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "Contratação DevOps sênior",
+      "budget": "18000",
       "category": {
         "id": "3",
         "name": "DevOps"
       },
       "cost": 0,
       "services": [],
-      "id": 1
+      "id": 6
     },
     {
-      "name": "Meu projeto 1",
-      "budget": "60000",
+      "name": "Treinamento incêndio",
+      "budget": "1115",
       "category": {
         "id": "7",
         "name": "Treinamento"
       },
       "cost": 0,
       "services": [],
-      "id": 2
+      "id": 7
+    },
+    {
+      "category": {
+        "id": "8",
+        "name": "UX"
+      },
+      "name": "Certificação UX",
+      "budget": "350",
+      "cost": 0,
+      "services": [],
+      "id": 8
     }
   ],
   "categories": [
