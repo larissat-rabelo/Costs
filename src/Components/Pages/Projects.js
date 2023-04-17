@@ -12,8 +12,8 @@ function Projects() {
     const [projects, setProjects] = useState([])
     const [removeLoading, setLoading] = useState(false)
     const [projectMessage, setProjectMessage] = useState('')
-    const location = useLocation()
-    const message = location.state?.message;
+    let location = useLocation()
+    let message = location.state?.message;
     
     if(location.state) {
         message = location.state.message
@@ -54,7 +54,7 @@ function Projects() {
             <h1>Meus projetos</h1>
             <LinkButton to="/NovoProjeto" text="Criar projeto"/>
         </div>
-        {message && <Message type ="sucess" msg={message}/>}
+        {message && <Message type="sucess" msg={message}/>}
         {projectMessage && <Message type="sucess" msg={projectMessage} />}
         <Container customClass="start">
             {projects.length > 0 && 

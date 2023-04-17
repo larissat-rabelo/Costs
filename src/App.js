@@ -15,24 +15,17 @@ function App() {
       <Navbar />
       <Container customClass="min-height">
         <Routes>
-          <Route exact path="/" element={<Home />} > 
-          </Route>
+          <Route path="/" element={<Home />}/>
 
-          <Route path='/contato' element={<Contato/>}>
-          </Route>
+          <Route path='/contato' element={<Contato/>}/>
 
-          <Route path='/projects' element={<Projects/>} >
-          </Route>
+          <Route path='/projects' element={<Projects/>}/>
 
-          <Route path='/empresa' element={<Empresa/>}>
-          </Route>
+          <Route path='/empresa' element={<Empresa/>}/>
 
-          <Route path='/NovoProjeto' element={<Novo_Projeto/>}> 
-          </Route>
+          <Route path='/NovoProjeto' element={<Novo_Projeto/>}/>
 
-          <Route path='/project/:id' element={<Projeto/>}>
-
-          </Route>
+          <Route path='/project/:id' element={<Projeto/>}/>
         </Routes>
       </Container>
       <Footer />
